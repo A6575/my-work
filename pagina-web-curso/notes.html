@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Page</title>
+    <!-- CSS interno: cambia el color de headline  -->
+    <style>
+        h1 {color:darkmagenta}
+    </style>
+</head>
+<body>
+    <!--
+        Diferentes tamanos para titulos (headlines). 
+        RECOMENDADO: utilizar un tipo de h solamente
+                     una vez 
+    -->
+    <h1>This is my title.</h1>
+    <h2>This is my title.</h2>
+    <h3>This is my title.</h3>
+    <h4>This is my title.</h4>
+    <h5>This is my title.</h5>
+    <h6>This is my title.</h6>
+
+    <!-- Para insertar texto
+        * strong: colocar texto en negrita
+        * em: colocar texto en cursiva
+    -->
+    <p>This is my <strong>text</strong>.</p>
+    <p>This is my <em>text</em>.</p>
+
+    <!-- br se usa para agregar espacios en blanco-->
+    <br>
+
+    <!-- LISTA: unordered list -->
+    <ul>
+        <!-- La etiqueta a es para generar links funcionales -->
+        <li><a href="https://www.youtube.com/">Suit</a></li>
+        <li>Shirt</li>
+        <li>Dress</li>
+        <li>Shoes</li>
+    </ul>
+    <!-- hr es para agregar una linea separadora -->
+    <hr>
+    <!-- LISTA: ordered list -->
+    <ol>
+        <li>Suit</li>
+        <li>Shirt</li>
+        <li>Dress</li>
+        <li>Shoes</li>
+    </ol>
+    <!-- 
+        Importar imagenes.
+        NOTA: .png y .jpg suelen tener baja calidad,
+             se recomienda entonces utilizar .svg
+    -->
+    <img src="images/brand-logo.png">
+
+    <!-- *nav: utilizado para menus de navegacion -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="contact.html">Contact</a>
+        <a href="profile.html">Profile</a>
+        <a href="signup.html">Signup</a>
+    </nav>
+    <!--
+        TRES FORMAS DE AGREGAR CSS
+            1.- inline css: agrega estilo como un atributo
+            2.- internal css: se agrega css en el area de head
+            3.- external css: se agrega mediante un archivo .css a parte
+                * se hace con la etiqueta link, que usa dos atributos
+                    - rel: indica el tipo de relacion del archivo a agregar
+                        + stylesheet
+                    - href: ubicacion del archivo
+        CSS SELECTOR
+            1.- class: se le da un nombre y se utiliza este para cambiar su 
+                       estilo
+                * .<nombre>{propiedades: cambios}
+            2.- id: se le da un nombre a cierto elemento para ser cambiado
+                * #<nombre>{propiedades: cambios}
+    -->
+
+    <!-- VIDEO: puede ser sef-closing o no, dependiendo del uso
+                <video src="videos/intro-video.mp4"> -->
+    <!-- recomendado para agregar diversos videos de diferentes tamanos -->
+    <video>
+        <source src="videos/intro-video.mp4">
+    </video>
+
+    <!--ESTRUCTURA DE FORM-->
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" placeholder="First name" required><br>
+
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" placeholder="Last name" required><br>
+
+        <label for="country">Country</label><br>
+        <select id="country" name="country" required>
+            <option value="Australia">Australia</option>
+            <option value="Venezuela">Venezuela</option>
+            <option value="USA">USA</option>
+        </select><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" placeholder="example@email.com" required><br>
+        
+        <label for="phone">Phone number:</label><br>
+        <input type="tel" id="phone" placeholder="0123-1234567" pattern="[0,1,2,4,6]{4}-[0-9]{7}" required><br>
+        
+        <label>Gender:</label><br>
+        <input type="radio" id="male" value="Male" name="gender">
+        <label for="male">Male</label>
+        
+        <input type="radio" id="female" required name="gender">
+        <label for="female">Female</label>
+        
+        <input type="radio" id="other" value="Female" name="gender">
+        <label for="other">Other</label><br>
+        
+        <label for="bday">Birthdate:</label><br>
+        <input type="date" id="bday" value="2002-05-07"><br>
+        
+        <label for="password">Password:</label><br>
+        <input type="password" id="password"><br>
+        
+        <label for="avatar">Profile image:</label><br>
+        <input type="file" id="avatar" accept="image/png, image/jpeg"><br><br>   
+        
+        <label for="terms">Term of use:</label><br>
+        <input type="checkbox" id="terms" required>
+        <label>I accept the <strong>terms of use</strong> of the website.</label>
+        <br><br>
+        <button>Signup</button>
+    </form>
+</body>
+</html>

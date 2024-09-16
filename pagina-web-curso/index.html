@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>My Page</title>
+</head>
+<body>
+    <header>
+        <img 
+            src="images/brand-logo.png"
+            alt="myshop logo"
+            srcset="images/brand-logo.svg"
+            width="100"
+            id="logo">
+        <img
+            src="images/brand-logo.png"
+            alt="myshop logo"
+            srcset="images/brand-logo-dm.svg"
+            width="100"
+            id="logo-dm">
+        <nav class="main-nav">
+            <a href="index.html" id="selected">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="contact.html">Contact</a>
+            <a href="profile.html">Profile</a>
+            <a href="signup.html">Signup</a>
+            <svg viewBox="0 0 512 512" width = "25px" height = "25px" id="sun-icon" onclick="darkMode()">
+                <g id="Sun">
+                    <path d="M255.8,120a136,136,0,1,0,136,136.05v0A136.17,136.17,0,0,0,255.8,120Z" style="fill:#1e1e1e"/>
+                    <path d="M472,232H440a24,24,0,0,0,0,48h32a24,24,0,0,0,0-48Z" style="fill:#1e1e1e"/>
+                    <path d="M255.8,416a24,24,0,0,0-24,24v32a24,24,0,1,0,48,0V440A24,24,0,0,0,255.8,416Z" style="fill:#1e1e1e"/>
+                    <path d="M96,256.05a24,24,0,0,0-24-24H40a24,24,0,1,0,0,48H72A24,24,0,0,0,96,256.05Z" style="fill:#1e1e1e"/>
+                    <path d="M255.8,96a24,24,0,0,0,24-24V40a24,24,0,0,0-48,0V72a24,24,0,0,0,24,24Z" style="fill:#1e1e1e"/>
+                    <path d="M402.89,142.87l22.63-22.63a24,24,0,0,0-33.85-34l-.07.07L369,109a24,24,0,0,0,33.86,34Z" style="fill:#1e1e1e"/>
+                    <path d="M402.89,369.22a24,24,0,0,0-34,33.87l.06.05,22.63,22.63a24,24,0,0,0,34-33.86l-.06-.06Z" style="fill:#1e1e1e"/>
+                    <path d="M108.7,369.22,86.07,391.85a24,24,0,1,0,33.85,34l.07-.07,22.63-22.63a24,24,0,1,0-33.86-34Z" style="fill:#1e1e1e"/>
+                    <path d="M108.7,142.87a24,24,0,1,0,34-33.89l0,0L120,86.32a24,24,0,1,0-34,33.83l.09.09Z" style="fill:#1e1e1e"/>
+                </g>
+            </svg>
+            <svg viewBox="0 0 312.81 311.51" width = "25px" height = "25px" id="moon-icon" onclick="lightMode()">
+                <path d="M305.2,178.16a11,11,0,0,0-9.2,2A117.36,117.36,0,0,1,260.4,201a111.48,111.48,0,0,1-40.4,7.2A117.45,117.45,0,0,1,102.4,90.56a123.27,123.27,0,0,1,6.4-38.8A107.41,107.41,0,0,1,128,17.36,10.21,10.21,0,0,0,126.4,3a11,11,0,0,0-9.2-2,161.41,161.41,0,0,0-84.8,56.8,158.38,158.38,0,1,0,280,132.8A9.71,9.71,0,0,0,305.2,178.16Z" transform="translate(0 -0.65)" style="fill:#ffff"/>
+            </svg>
+        </nav>
+    </header>
+
+    <div id="intro">
+        <div>
+            <h1>Best Clothing Quality</h1>
+            <p id="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem laudantium, quibusdam repellat optio exercitationem repellendus ducimus rerum doloremque at sapiente placeat repudiandae maiores in animi laboriosam porro. In, accusantium molestiae.</p>
+            <button onclick="hideNav()">Become a member</button>
+        </div>
+        <video width="450px" autoplay="true" muted loop
+            style="display: block; margin: auto;">
+            <source src="videos/intro-video.mp4">
+        </video>
+    </div>
+
+    <main>
+        <div class="header-products">
+            <h2>Suits</h2>
+            <a href="suits.html">View all suits</a>
+        </div>
+        <div class="display-products">
+            <div class="product-card">
+                <div class="review-con"><p>Review: 4.8⭐</p></div>
+                <img src="images/suit-1.png" class="borders" onmouseover="showReview(0)" onmouseout="dontShowReview(0)">
+                <div class="text-format">
+                    <h3>Product 1</h3>
+                    <p>this is a brief description of the image above</p>
+                    <a href="#">View Product</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="review-con"><p>Review: 4.8⭐</p></div>
+                <img src="images/suit-2.png" class="borders" onmouseover="showReview(1)" onmouseout="dontShowReview(1)">
+                <div class="text-format">
+                    <h3>Product 2</h3>
+                    <p>this is a brief description of the image above</p>
+                    <a href="#">View Product</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="review-con"><p>Review: 4.8⭐</p></div>
+                <img src="images/suit-3.png" class="borders" onmouseover="showReview(2)" onmouseout="dontShowReview(2)">
+                <div class="text-format">
+                    <h3>Product 3</h3>
+                    <p>this is a brief description of the image above</p>
+                    <a href="#">View Product</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="review-con"><p>Review: 4.8⭐</p></div>
+                <img src="images/suit-4.png" class="borders" onmouseover="showReview(3)" onmouseout="dontShowReview(3)">
+                <div class="text-format">
+                    <h3>Product 4</h3>
+                    <p>this is a brief description of the image above</p>
+                    <a href="#">View Product</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="no-cal">
+        <div id="calculator">
+            <h2 id="displayNum">0</h2>
+            <h4 onclick="formNumber('7')">7</h4>
+            <h4 onclick="formNumber('8')">8</h4>
+            <h4 onclick="formNumber('9')">9</h4>
+            <h4 onclick="formNumber('4')">4</h4>
+            <h4 onclick="formNumber('5')">5</h4>
+            <h4 onclick="formNumber('6')">6</h4>
+            <h4 onclick="formNumber('1')">1</h4>
+            <h4 onclick="formNumber('2')">2</h4>
+            <h4 onclick="formNumber('3')">3</h4>
+            <h4 onclick="formNumber('0')">0</h4>
+            <h4 onclick="formNumber('.')">.</h4>
+            <h4 onclick="opMod()">%</h4>
+            <h4 style="grid-row: 6/7; grid-column: 1/3;" class="cal-important-buttons" onclick="resetCal()">reset</h4>
+            <h4 style="grid-row: 2/3; grid-column: 4/5;" class="cal-basic-op" onclick="opDiv()">÷</h4>
+            <h4 style="grid-row: 3/4; grid-column: 4/5;" class="cal-basic-op" onclick="opMult()">x</h4>
+            <h4 style="grid-row: 4/5; grid-column: 4/5;" class="cal-basic-op" onclick="opSub()">-</h4>
+            <h4 style="grid-row: 5/6; grid-column: 4/5;" class="cal-basic-op" onclick="opSum()">+</h4>
+            <h4 id="equal" style="grid-row: 6/7; grid-column: 3/5;" class="cal-important-buttons">=</h4>
+        </div>
+    </div>
+    <footer>
+        <h2>this is a footer</h2>
+    </footer>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
