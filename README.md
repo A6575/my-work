@@ -16,7 +16,7 @@ Proyecto realizado como proyecto final de Algoritmos y Estructuras I, donde se a
 El proyecto fue escrito utilizando la herramienta ```Google Colab```.
 ### 👩‍💻Proyecto Página Web
 ---
+Página web sencilla elaborada con ```HTML```, ```CSS``` y ```JavaScript```
+
 > [!NOTE]
 > Este es un proyecto realizado como parte del curso ```Mega Web Development Course: Full stack web application 2023```, por lo que sigue en desarrollo.
-
-Página web sencilla elaborada con ```HTML```, ```CSS``` y ```JavaScript```
